@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>max</file>
+    </qresource>
+    <qresource prefix="/media">
+        <file>help.MP4</file>
+    </qresource>
+</RCC>
