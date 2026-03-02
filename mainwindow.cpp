@@ -84,6 +84,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->inputBaseSpin, QOverload<int>::of(&QSpinBox::valueChanged), this, &MainWindow::onInputChanged); //
     connect(ui->outputBaseSpin, QOverload<int>::of(&QSpinBox::valueChanged), this, &MainWindow::onInputChanged);
 
+    //connect(ui->inputBaseSpin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &MainWindow::onInputChanged);
+    //connect(ui->outputBaseSpin, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &MainWindow::onInputChanged);
+
     connect(ui->convertButton, &QPushButton::clicked, this, &MainWindow::onConvertClicked);
     connect(ui->swapButton, &QPushButton::clicked, this, &MainWindow::onSwapClicked);
     connect(ui->copyButton, &QPushButton::clicked, this, &MainWindow::onCopyClicked);
